@@ -15,7 +15,7 @@ cd /usr/share/nginx/html
 unzip /tmp/web.zip
 
 #copy the reverse proxy file
-cp /home/centos/roboshop-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp /home/centos/robo-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 #Restart nginx
 systemctl restart nginx
