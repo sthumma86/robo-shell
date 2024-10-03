@@ -30,10 +30,10 @@ systemctl enable catalogue
 systemctl start catalogue
 
 #copying mongodb repo
-cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/robo-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 
 #Insatlling mongodb client
 dnf install mongodb-org-shell -y
 
 #Load schema (Loading catalogue data to mongodb)
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
+mongo --host 172.31.27.254 </app/schema/catalogue.js
