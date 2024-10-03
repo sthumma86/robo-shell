@@ -9,6 +9,9 @@ dnf module enable nodejs:18 -y
 #Install modejs
 dnf install nodejs -y
 
+#roboshop user creation
+useradd roboshop
+
 #As our application doesnot have rpm software we have to setup manually
 mkdir /app
 curl -o /tmp/catalogue.zip https://roboshop-builds.s3.amazonaws.com/catalogue.zip
