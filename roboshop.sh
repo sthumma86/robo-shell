@@ -8,7 +8,7 @@ AMI=ami-0b4f379183e5706b9
 SG_ID=sg-01f91316b0bb612cb #replace with your securitygroup id
 INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payments" "dispatch" "web") # array datatype
 
-for in in "${INSTANCES[@]}"
+for i in "${INSTANCES[@]}"
 do
     echo "Instance is: $i"
 
