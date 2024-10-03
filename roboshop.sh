@@ -19,7 +19,7 @@ do
         INSTANCE_TYPE="t2.micro"
     fi
 
-    aws ec2 run-instances --image-id $AMI --instance-type $INSTANCE_TYPE --security-group-ids sg-01f91316b0bb612cb --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=$i}]'
+    aws ec2 run-instances --image-id $AMI --instance-type $INSTANCE_TYPE --security-group-ids sg-01f91316b0bb612cb --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]"
 
 done
 
